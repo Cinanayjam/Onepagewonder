@@ -15,8 +15,12 @@ body {
 * Barre de navigation
 */
 nav {
-    background-color: black; /* Couleur de fond */
+    background-color: rgba(0, 0, 0, 0.85); /* Couleur de fond */
     text-transform: uppercase; /* Met le texte en majuscule*/
+    position: fixed;/* fixe l'élément HTML à sa position */
+    top: 0; /* colle en haut */
+    left: 0; /* colle à gauche */
+    right: 0; /* colle à droite */
     
 }
 
@@ -65,6 +69,7 @@ header h2 {
     margin: 10px 0 80px 0; /* 10px haut, 0 droite, 80 px bax, 0 gauche */
 }
 
+
 .btn {
     color: white;
     text-decoration: none;
@@ -84,4 +89,49 @@ header h2 {
     background-color: #ff2400;
     transition: all 500ms;
 }
+
+/**
+* Change de section MAIN
+*/
+main section {
+    display: flex;
+    justify-content: space-between; /* Sépare les éléments en utilisant l'espace disponibles */
+    align-items: center;
+    gap: 150px;
+    margin: 150px 0;
+    
+}
+
+main section img {
+    width: 40%;
+    border-radius: 100%;
+}
+
+main section h3 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: lighter;
+}
+
+/**
+* Footer
+*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    border-top: 1px solid gray;
+
+}
+
+
+
+
+
+
+
+
+
+
 
